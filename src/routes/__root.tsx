@@ -117,9 +117,9 @@ function RootComponent() {
           <AppSidebar />
           <SidebarInset className="min-w-0">
             <Topbar />
-            <main className="flex-1 p-4 md:p-6 lg:p-8">
+            <div className="flex-1 p-4 md:p-6 lg:p-8">
               <Outlet />
-            </main>
+            </div>
           </SidebarInset>
         </SidebarProvider>
         <Toaster richColors position="top-right" />
