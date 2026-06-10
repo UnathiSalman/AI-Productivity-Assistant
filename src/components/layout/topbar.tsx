@@ -23,7 +23,7 @@ export function Topbar() {
           <span className="absolute right-2 top-2 h-1.5 w-1.5 rounded-full bg-accent2" />
         </Button>
         <Avatar className="h-8 w-8">
-          <AvatarFallback className="bg-brand-gradient text-xs font-medium text-white">AK</AvatarFallback>
+          <AvatarFallback className="bg-brand-gradient text-xs font-medium text-white">US</AvatarFallback>
         </Avatar>
       </div>
     </header>
