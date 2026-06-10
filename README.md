@@ -1,126 +1,128 @@
-# Aether AI — Workplace Productivity Assistant
+# Aether AI – Workplace Productivity Assistant
 
-A modern SaaS web application that brings AI-powered productivity to the workplace. Aether AI helps you draft emails, summarize meetings, plan tasks, conduct research, and chat with an AI assistant — all from one elegant, responsive dashboard.
+## Project Overview
 
-> Built for **Your Majesty Unathi Salman** ✨
+Aether AI is a modern AI-powered workplace productivity platform designed to help professionals automate repetitive tasks and improve workflow efficiency. The application combines multiple AI-driven tools within a single dashboard, allowing users to generate professional emails, summarize meeting notes, plan projects, conduct research, and interact with an AI assistant.
 
----
+The platform was developed with a clean, responsive SaaS-inspired user interface that provides an intuitive user experience across desktop, tablet, and mobile devices.
 
-## ✨ Features
+### Objective
 
-- **📊 Dashboard** — KPI cards, AI usage statistics, and a live recent-activity feed.
-- **✉️ Smart Email Generator** — Generate polished emails by specifying purpose, recipient, and tone.
-- **📝 Meeting Notes Summarizer** — Turn raw transcripts into executive summaries, decisions, action items, and next steps.
-- **✅ AI Task Planner** — Convert any goal into prioritized tasks, timelines, milestones, and risk assessments.
-- **🔍 AI Research Assistant** — Generate research reports with findings, opportunities, risks, and references.
-- **💬 AI Chatbot** — Real-time conversational assistant with suggested prompts and typing indicators.
-- **🌓 Light & Dark Mode** — Persistent theme switching with a warm coral-to-amber palette designed to inspire.
-- **📱 Fully Responsive** — Mobile-first design with a collapsible sidebar and adaptive layouts.
-- **🛡️ Responsible AI Disclaimer** — Shown on every AI-generated page to encourage human review.
+The primary objective of Aether AI is to reduce the time spent on routine workplace activities and enable professionals to focus on strategic, creative, and high-value work through intelligent automation.
 
 ---
 
-## 🛠️ Tech Stack
+## Features
 
-- **Framework:** React 19 + TanStack Start (SSR-ready)
-- **Language:** TypeScript
-- **Styling:** Tailwind CSS v4 with semantic design tokens
-- **UI Components:** shadcn/ui + Radix primitives
-- **Routing:** TanStack Router (file-based)
-- **Data:** TanStack Query
-- **Animations:** Framer Motion
-- **Charts:** Recharts
-- **Icons:** Lucide React
-- **Build Tool:** Vite 7
-- **Runtime:** Bun
+### Smart Email Generator
+Generate professional emails based on:
+- Email purpose
+- Recipient details
+- Preferred tone of communication
+
+**Output includes:**
+- Subject line
+- Professional email content
+- Editable text before use
 
 ---
 
-## 🚀 Getting Started
+### Meeting Notes Summarizer
+
+Convert lengthy meeting transcripts into concise summaries.
+
+**Output includes:**
+- Executive Summary
+- Key Decisions
+- Action Items
+- Next Steps
+
+---
+
+### AI Task Planner
+
+Transform goals and project ideas into structured action plans.
+
+**Output includes:**
+- Prioritized Tasks
+- Milestones
+- Timelines
+- Dependencies
+- Recommended Next Actions
+
+---
+
+### AI Research Assistant
+
+Generate structured research reports for workplace and business topics.
+
+**Output includes:**
+- Executive Summary
+- Key Findings
+- Industry Trends
+- Opportunities
+- Risks
+- References
+
+---
+
+### AI Chat Assistant
+
+An interactive conversational AI assistant capable of:
+- Answering workplace-related questions
+- Brainstorming ideas
+- Providing productivity guidance
+- Assisting with general business tasks
+
+---
+
+### Responsive Dashboard
+
+- Modern SaaS-style interface
+- Sidebar navigation
+- Mobile-friendly design
+- Professional user experience
+
+---
+
+### Responsible AI Disclaimer
+
+All AI-generated content includes a reminder that outputs should be reviewed by a human before use in critical business decisions.
+
+---
+
+## Tools Used
+
+| Category | Technology |
+|-----------|------------|
+| Frontend | React.js |
+| Programming Language | TypeScript |
+| Styling | Tailwind CSS |
+| Animation | Framer Motion |
+| Icons | Lucide React |
+| AI Integration | OpenAI API |
+| Development Platform | Lovable AI |
+| Backend | Node.js |
+| Deployment | Vercel |
+| Version Control | Git & GitHub |
+
+---
+
+## Setup Instructions
 
 ### Prerequisites
-- [Bun](https://bun.sh/) (or Node.js 20+ with npm/pnpm)
 
-### Installation
+Before running the project, ensure you have:
+
+- Node.js (v18 or later)
+- npm or yarn
+- Git
+- OpenAI API Key
+
+---
+
+### 1. Clone the Repository
 
 ```bash
-# Clone the repository
-git clone <your-repo-url>
+git clone https://github.com/your-username/aether-ai.git
 cd aether-ai
-
-# Install dependencies
-bun install
-
-# Start the dev server
-bun run dev
-```
-
-The app will be running at `http://localhost:5173`.
-
-### Build for Production
-
-```bash
-bun run build
-bun run start
-```
-
----
-
-## 📁 Project Structure
-
-```
-src/
-├── components/
-│   ├── layout/           # Sidebar, topbar, page headers
-│   ├── ui/               # shadcn/ui primitives
-│   ├── ai-disclaimer.tsx # Responsible AI notice
-│   └── theme-provider.tsx
-├── lib/
-│   ├── mock-ai.ts        # Mock AI response generators
-│   └── utils.ts
-├── routes/               # File-based routes (TanStack)
-│   ├── __root.tsx        # App shell
-│   ├── index.tsx         # Dashboard
-│   ├── email.tsx
-│   ├── meetings.tsx
-│   ├── tasks.tsx
-│   ├── research.tsx
-│   └── chat.tsx
-└── styles.css            # Tailwind + design tokens
-```
-
----
-
-## 🎨 Design System
-
-Aether AI uses a warm, energizing **coral-to-amber gradient** palette designed to inspire creativity and focus. All colors are defined as semantic CSS tokens in `src/styles.css` and automatically adapt to light/dark mode.
-
----
-
-## 🤖 AI Integration
-
-The app ships with a mock AI layer (`src/lib/mock-ai.ts`) that simulates realistic responses with typing delays. To wire up a real AI provider:
-
-1. Replace the functions in `mock-ai.ts` with calls to your provider (OpenAI, Anthropic, Lovable AI Gateway, etc.).
-2. Move API calls into TanStack server functions for secure key handling.
-3. Stream responses for a better UX in the chatbot and generators.
-
----
-
-## ⚠️ Responsible AI
-
-Every AI-generated page displays the disclaimer:
-
-> *AI-generated content may contain inaccuracies and should be reviewed before business use.*
-
-Please review all outputs before sharing externally.
-
----
-
-## 📄 License
-
-MIT — feel free to fork, remix, and build on top of it.
-
----
-
-Built with ❤️ on [Lovable](https://lovable.dev).
