@@ -1,4 +1,4 @@
-# Aether AI – Workplace Productivity Assistant
+# Aether AI – King Unathi Salman's AI Assistant
 
 ## Project Overview
 
