@@ -17,7 +17,7 @@ A few quick points:
 Would Thursday or Friday afternoon work? Happy to adjust to your schedule.
 
 ${tone === "formal" ? "Kind regards" : tone === "casual" ? "Cheers" : tone === "persuasive" ? "Looking forward to it" : "Best"},
-Alex`;
+Your Majesty Unathi Salman`;
 
 export const mockMeeting = () => ({
   summary:
@@ -32,7 +32,7 @@ export const mockMeeting = () => ({
     { who: "Maya", task: "Finalize onboarding spec by Friday." },
     { who: "Diego", task: "Migrate billing schema and write data backfill." },
     { who: "Priya", task: "Draft beta launch comms and outreach list." },
-    { who: "Alex", task: "Schedule weekly cross-functional sync." },
+    { who: "Your Majesty Unathi Salman", task: "Schedule weekly cross-functional sync." },
   ],
   next: [
     "Kickoff sync next Monday at 10am.",

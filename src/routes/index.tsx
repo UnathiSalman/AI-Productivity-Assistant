@@ -67,7 +67,7 @@ function Dashboard() {
     <div className="space-y-6">
       <PageHeader
         icon={LayoutDashboard}
-        title="Welcome back, Alex"
+        title="Welcome back, Your Majesty Unathi Salman"
         description="Here's what's happening across your AI workspace today."
       />
 
